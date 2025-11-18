@@ -1,4 +1,4 @@
-import { Quote } from 'src/interfaces/quote.interface';
+import { Quote } from 'src/quotes/quote.interface';
 
 export const quotes: Quote[] = [
   {

@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { QuoteRepository } from './repositories/quote.repository';
+import { QuoteRepository } from './quotes/quote.repository';
+import { QuoteModule } from './quotes/quote.module';
 
 @Module({
-  imports: [],
+  imports: [QuoteModule],
   controllers: [AppController],
   providers: [AppService, QuoteRepository],
 })
